@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define ll long long int
+#define ld long long double
+
+//#define for for(int i=0; i<n; i++)
+
+#define pb push_back
+#define pii pair<int,int>
+
+#define Test int t;cin >> t;while(t--)
+#define Q int q; cin>>q; while(q--)
+
+#define cy cout<<"YES"<<endl
+#define cn cout<<"NO"<<endl
+#define c1 cout<<-1<<endl
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+int main()
+{
+    int a,b,c; cin >> a >> b >> c;
+    int cnt = 0;
+    for(int i=a; i<=b; i++){
+        if(i%c == 0){
+            cout << i << endl;
+            break;
+        }
+        else cnt++;
+    }
+    int sub = b-a+1;
+    if(cnt == sub) cout << -1 << endl;
+
+    return 0;
+}
